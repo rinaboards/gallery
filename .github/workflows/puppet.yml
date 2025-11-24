@@ -29,7 +29,13 @@ jobs:
       render_domestic: ${{ steps.filter.outputs.render_domestic }}
       render_world: ${{ steps.filter.outputs.render_world }}
       spotlight: ${{ steps.filter.outputs.spotlight }}
+      spotlight_chance: ${{ steps.roll.outputs.chance }}
     steps:
+    - id: roll
+      name: Roll the Dice (50% Chance)
+      run: |
+        RANDOM_RESULT=$((RANDOM % 3))
+        echo "chance=$RANDOM_RESULT" >> $GITHUB_OUTPUT
     - uses: actions/checkout@v4
     # known: Anything not a push event causes every file to be marked as changed
     - uses: dorny/paths-filter@v3
@@ -152,7 +158,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-    if: needs.filter.outputs.spotlight == 'true'
+    if: needs.filter.outputs.spotlight == 'true' || needs.filter.outputs.spotlight_chance == '1'
     steps:
     - uses: actions/checkout@v4
       with:
@@ -178,7 +184,7 @@ jobs:
       with:
         name: spotlight
         path: renderer/spotlight/spotlight
-        retention-days: 1 # rarely ever captures images this long but if it does pls increase this
+        retention-days: 4
 
   # The GitHub Pages
   # Build job
