@@ -1,6 +1,6 @@
 [
   {
-    "img": "saba.png",
+    "img": "saba",
     "title": "Sameko Sababa",
     "bounds": [
       [21.155746873645484, 105.91268521552732],
@@ -9,7 +9,7 @@
     "tags": ["sameko_saba"]
   },
   {
-    "img": "haru.png",
+    "img": "haru",
     "title": "Haru's Grassland",
     "bounds": [
       [35.30051171393322, 140.19336880927733],
@@ -18,7 +18,7 @@
     "tags": ["haru_urara"]
   },
   {
-    "img": "midomination.png",
+    "img": "midomination",
     "title": "Midomination",
     "description": "we need all goodies related to her being made of eco-friendly materials because funny haha",
     "bounds": [
@@ -28,7 +28,7 @@
     "tags": ["izikuraibu"]
   },
   {
-    "img": "nesonosora.png",
+    "img": "nesonosora",
     "title": "Nesonosora High School Idol Club",
     "description": "(feat. Takasaki \"collect my yuri\" Yuu)",
     "zoom": 14.180726372239347,
@@ -40,7 +40,7 @@
     "tags": ["hasunosora"]
   },
   {
-    "img": "flob.png",
+    "img": "flob",
     "title": "(TODO)",
     "description": "just testing how large the renderer can handle",
     "bounds": [
@@ -50,7 +50,7 @@
     "tags": ["touhou"]
   },
   {
-    "img": "ayumuarmy.png",
+    "img": "ayumuarmy",
     "title": "Ayumu Army (1)",
     "description": "m",
     "bounds": [
@@ -60,7 +60,7 @@
     "tags": ["nijigaku"]
   },
   {
-    "img": "ayumuarmy2.png",
+    "img": "ayumuarmy2",
     "title": "Ayumu Army (2)",
     "description": "m",
     "bounds": [
@@ -70,7 +70,7 @@
     "tags": ["nijigaku"]
   },
   {
-    "img": "ayumuarmy3.png",
+    "img": "ayumuarmy3",
     "title": "Final FormRide: J",
     "bounds": [
       [26.88358628171346, 127.52200162177732],

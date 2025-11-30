@@ -1,6 +1,6 @@
 [
   {
-    "img": "numero_uno.jpg",
+    "img": "numero_uno",
     "title": "The Beginning of Everything",
     "description": "This starts off as a little gag[citation needed] in Love Live HQ...",
     "coordinate": [35.044317292618146, 138.89364224677735],
@@ -12,7 +12,7 @@
     "tags": ["muse"]
   },
   {
-    "img": "nico.png",
+    "img": "nico",
     "title": "nico",
     "description": "nico nico niii (Japan -> Marshall Islands)",
     "coordinate": [31.60690941490933,161.69686490302732],
@@ -24,7 +24,7 @@
     "tags": ["muse","countries-marker"]
   },
   {
-    "img": "nico_2.png",
+    "img": "nico_2",
     "title": "nico",
     "description": "nico nico niii",
     "coordinate": [30.561428745537658, 172.61938443427732],
@@ -35,7 +35,7 @@
     "tags": ["muse"]
   },
   {
-    "img": "aiscream_irl.png",
+    "img": "aiscream_irl",
     "title": "AiScReam (Official MV)",
     "description": "HER NAME IS LOVE LIVE- wait rhats not even the correct answer",
     "coordinate": [34.84807209343993,143.81059537177734],
@@ -47,7 +47,7 @@
     "tags": ["aqours","nijigaku","liella","aiscream"]
   },
   {
-    "img": "rhythm.png",
+    "img": "rhythm",
     "title": "iirc this is rhythm heaven?",
     "description": "feel free to submit a pr changing this at https://github.com/rinaboards/gallery btw",
     "coordinate": [34.94048976144947,141.95909146552734],
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "img": "machine_love.png",
+    "img": "machine_love",
     "title": "Machine Love",
     "bounds": [
       [35.03438665475368, 141.4111813092773],
@@ -66,7 +66,7 @@
     ]
   },
   {
-    "img": "teto.jpg",
+    "img": "teto",
     "title": "teto",
     "description": "teto",
     "bounds": [
@@ -76,7 +76,7 @@
     "tags": ["teto","fnuny","vocaloid"]
   },
   {
-    "img": "nicomaki.png",
+    "img": "nicomaki",
     "title": "NicoMaki LLSIF Art (iirc)",
     "zoom": 12.3737372922,
     "bounds": [
@@ -86,7 +86,7 @@
     "tags": ["muse"]
   }, 
   {
-    "img": "lost_media.png",
+    "img": "lost_media",
     "title": "hi",
     "description": "See, everything has its purpose",
     "bounds": [
@@ -95,7 +95,7 @@
     ]
   },
   {
-    "img": "ms_pacman.jpg",
+    "img": "ms_pacman",
     "title": "Ms. Pac-Man if it were actually good:",
     "bounds": [
       [31.042919492133326, 164.83895474677732],
@@ -103,7 +103,7 @@
     ]
   },
   {
-    "img": "red_train.png",
+    "img": "red_train",
     "title": "The so-callled red train idk what this is",
     "bounds": [
       [31.174608524335277, 164.49108365302732],

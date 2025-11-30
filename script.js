@@ -171,7 +171,7 @@ fetch('metadata.mpk')
 
     const mercUtil = new MercatorUtils(1000);
     const openImageDialog = (item, llp) => {
-      dialogImage.src = `../assets/images/${folder}/${item.img}`;
+      dialogImage.src = `../assets/images/${folder}/${item.img}.webp`;
       m_title.textContent = item.title;
       m_desc.textContent = item.description ?? "";
       m_region.textContent = regionMaps[item.img];
@@ -215,7 +215,7 @@ fetch('metadata.mpk')
       }
       // The image element
       const img = document.createElement('img');
-      img.dataset.src = `../assets/thumbnails/${folder}/${item.img}`;
+      img.dataset.src = `../assets/thumbnails/${folder}/${item.img}.webp`; // i think?
       img.alt = item.title;
       img.setAttribute('data-lat', llp[0]);
       img.setAttribute('data-lng', llp[1]);

@@ -311,7 +311,8 @@ for (const m of metadata) {
 
   await canvasHandle!.screenshot({
     // @ts-ignore
-    path: `${saveFolder}/${m.img}`
+    path: `${saveFolder}/${m.img}.webp`,
+    quality: 100
   })
 
   const bounds = m.bounds;
