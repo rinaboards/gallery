@@ -35,6 +35,18 @@
     "tags": ["muse"]
   },
   {
+    "img": "nico_winter_2025",
+    "title": "nico (Winter outfit)",
+    "description": "nico nico niii (Marshall Islands -> Honolulu) (almost)",
+    "coordinate": [28.257,179.686],
+    "zoom": 12.2,
+    "bounds": [
+      [28.313743847367128, 179.65309537177734],
+      [28.204123454663872, 179.72340787177734]
+    ],
+    "tags": ["muse", "countries-marker"]
+  },
+  {
     "img": "aiscream_irl",
     "title": "AiScReam (Official MV)",
     "description": "HER NAME IS LOVE LIVE- wait rhats not even the correct answer",
