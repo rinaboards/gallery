@@ -58,7 +58,7 @@ puppeteer.use(puppetstealth())
 
 logger.info("Starting browser...")
 const browser: Browser = await puppeteer.launch({
-  headless: true,
+  headless: process.env.BE_HEADFUL === undefined ? true : false,
   executablePath: CHROMIUM_PATH,
   args: ['--no-sandbox', '--force-prefers-reduced-motion', ...(process.env.ANDROID_ROOT==="/system" ? ['--disable-gpu'] : []), ...(process.env.WEBGL_WORKAROUND ? ['--use-gl=egl', '--disable-webgl-image-chromium', '--disable-gpu-compositing', '--disable-dev-shm-usage'] : [])]
 })
@@ -112,8 +112,8 @@ await devtools.send("Runtime.evaluate", {
   expression: `window.${mapobj_name} = undefined;window.__tmp_maplibre_maps_obj = []`
 })
 devtools.on("Debugger.scriptParsed", (p)=>{
-  if (!p.url.startsWith("https://wplace.live/_app/immutable/nodes/")) return;
-  if (p.url.startsWith("https://wplace.live/_app/immutable/nodes/app")) return;
+  if (!p.url.startsWith("https://wplace.live/_app/immutable/chunks")) return;
+  //if (p.url.startsWith("https://wplace.live/_app/immutable/nodes/app")) return;
   logger.debug(p.url)
 
   // Find the position after "{get map(){return " (before the return) in the src
@@ -178,12 +178,15 @@ await page.goto("https://wplace.live")
 if (process.env.ENABLE_RECORDING)
   rec = await page.screencast({path: "debug/r.webm", format: "webm"})
 
-await page.locator("button[data-tooltip=\"Zoom out\"]").waitHandle().then(()=>{
+await page.locator("button[data-tooltip=\"Zoom out\"]").waitHandle().then(async ()=>{
+  // sleep for a bit
+  await sleep(5000);
   // click in the browser context instead
   return page.evaluate(()=>{
     document.querySelector("button[data-tooltip=\"Zoom out\"]").click()
   });
 })
+
 
 const canvasHandle = await page.waitForSelector("canvas.maplibregl-canvas");
 if (canvasHandle) {
