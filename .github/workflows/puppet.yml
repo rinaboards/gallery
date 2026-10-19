@@ -158,7 +158,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-    if: needs.filter.outputs.spotlight == 'true' || needs.filter.outputs.spotlight_chance == '1'
     steps:
     - uses: actions/checkout@v4
       with:
