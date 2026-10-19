@@ -58,7 +58,7 @@ puppeteer.use(puppetstealth())
 
 logger.info("Starting browser...")
 const browser: Browser = await puppeteer.launch({
-  headless: true,
+  headless: process.env.ci ? true : false,
   executablePath: CHROMIUM_PATH,
   args: ['--no-sandbox', '--force-prefers-reduced-motion', ...(process.env.ANDROID_ROOT==="/system" ? ['--disable-gpu'] : []), ...(process.env.WEBGL_WORKAROUND ? ['--use-gl=egl', '--disable-webgl-image-chromium', '--disable-gpu-compositing', '--disable-dev-shm-usage'] : [])]
 })
@@ -118,8 +118,8 @@ devtools.on("Debugger.scriptParsed", (p)=>{
 
   // Find the position after "{get map(){return " (before the return) in the src
   devtools.send("Debugger.getScriptSource", {scriptId: p.scriptId}).then(async (src)=>{
-    const t1 = ".Map=class extends ";
-    const t2 = "}flyTo(";
+   // const t1 = "class Q extends";
+    const t2 = "}zoomOut(";
     const index = src.scriptSource.indexOf(t2)
     if (index === -1) return;
 
