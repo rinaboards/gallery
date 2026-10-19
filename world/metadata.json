@@ -1,5 +1,23 @@
 [
   {
+    "img": "ddlctokyo",
+    "title": "DDLC Club Members",
+    "bounds": [
+      [35.78808845772956, 139.66110351562497],
+      [35.77439852513284, 139.67446289062497]
+    ],
+    "tags": ["ddlc"]
+  },
+  {
+    "img": "tqq1",
+    "title": "The Quintessential Quintuplets",
+    "description": "yknow i think they should make the what ifs ova like clannad does",
+    "bounds": [
+      [35.00041160106615, 136.91487304687496],
+      [34.908349739523, 137.00153320312498]
+    ]
+  },
+  {
     "img": "haru",
     "title": "Haru's Grassland",
     "bounds": [

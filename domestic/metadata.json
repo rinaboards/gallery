@@ -80,11 +80,12 @@
   },
   {
     "img": "machine_love",
-    "title": "Machine Love",
+    "title": "Machine Love - t",
     "bounds": [
       [35.03438665475368, 141.4111813092773],
       [34.930546520029296, 141.63635709052733]
-    ]
+    ],
+    "tags": ["teto"]
   },
   {
     "img": "teto",

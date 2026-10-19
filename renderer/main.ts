@@ -178,10 +178,10 @@ await page.goto("https://wplace.live")
 if (process.env.ENABLE_RECORDING)
   rec = await page.screencast({path: "debug/r.webm", format: "webm"})
 
-await page.locator("button[data-tip=\"Random place\"]").waitHandle().then(()=>{
+await page.locator("button[data-tooltip=\"Zoom out\"]").waitHandle().then(()=>{
   // click in the browser context instead
   return page.evaluate(()=>{
-    document.querySelector("button[data-tip=\"Random place\"]").click()
+    document.querySelector("button[data-tooltip=\"Zoom out\"]").click()
   });
 })
 
