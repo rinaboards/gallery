@@ -58,7 +58,7 @@ puppeteer.use(puppetstealth())
 
 logger.info("Starting browser...")
 const browser: Browser = await puppeteer.launch({
-  headless: process.env.ci ? true : false,
+  headless: true,
   executablePath: CHROMIUM_PATH,
   args: ['--no-sandbox', '--force-prefers-reduced-motion', ...(process.env.ANDROID_ROOT==="/system" ? ['--disable-gpu'] : []), ...(process.env.WEBGL_WORKAROUND ? ['--use-gl=egl', '--disable-webgl-image-chromium', '--disable-gpu-compositing', '--disable-dev-shm-usage'] : [])]
 })
